@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
-import {motion} from 'framer-motion';
+import { styles } from '../styles'
+import { ComputersCanvas } from './canvas'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
@@ -26,6 +26,23 @@ const Hero = () => {
         </div>
       </div>
       <ComputersCanvas />
+      <div className="absolute w-full flex items-center justify-center xs:bottom-6 bottom-28">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-xl border-4 items-start p-2 ">
+            <motion.div
+              animate={{
+                y: [0, 25, 0],
+              }}
+              transition={{
+                duration: 1.0,
+                repeat: Infinity,
+                repeatType: 'loop',
+              }}
+              className="w-3 h-3 rounded-full bg-white"
+            />
+          </div>
+        </a>
+      </div>
     </div>
   )
 }
