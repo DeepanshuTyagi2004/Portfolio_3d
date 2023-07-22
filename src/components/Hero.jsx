@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute inset-0 flex flex-row items-start gap-5 top-[120px] mx-auto max-w-7xl`}
       >
@@ -20,18 +20,17 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in
-            sem nec est varius consequat sit amet ut leo. Nunc ut pulvinar ante.
-            Nulla dignissim magna id erat egestas faucibus.
+            sem nec est varius consequat sit amet ut leo.
           </p>
         </div>
       </div>
       <ComputersCanvas />
-      <div className="absolute w-full flex items-center justify-center xs:bottom-6 bottom-28">
+      <div className="absolute w-full flex items-center justify-center xs:bottom-10 bottom-32">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-xl border-4 items-start p-2 ">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 items-start p-2 ">
             <motion.div
               animate={{
-                y: [0, 25, 0],
+                y: [0, 24, 0],
               }}
               transition={{
                 duration: 1.0,
@@ -43,7 +42,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </div>
+    </section>
   )
 }
 
