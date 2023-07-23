@@ -8,13 +8,13 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas
+  StarsCanvas,
 } from './components'
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-black">
+      <div className="relative z-0 bg-[#050505]">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
@@ -24,7 +24,7 @@ function App() {
         <Tech />
         <Works />
         <Feedbacks />
-        <div className='relative z-0'>
+        <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
